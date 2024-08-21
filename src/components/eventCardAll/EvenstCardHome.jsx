@@ -4,6 +4,7 @@ import { FaFacebookF } from "react-icons/fa";
 import moment from "moment";
 import HeadTags from "./HeadTags";
 import { FacebookShareButton } from "react-share";
+import { FaRegShareFromSquare } from "react-icons/fa6";
 
 export default function EvenstCardHome({
   title,
@@ -44,13 +45,13 @@ export default function EvenstCardHome({
                   {about}
                 </p>
                 <div className="flex flex-col md:flex-row md:items-center">
-                  <div className="flex items-center bg-[#172554] w-[30px] justify-center text-white font-bold py-2 rounded-full mb-3 md:mb-0 md:mr-3">
+                  <div className="flex items-center w-[30px] justify-center text-[#172554] font-bold py-2 rounded-full mb-3 md:mb-0 md:mr-2">
                     <FacebookShareButton
                       url={shareUrl}
                       hashtag="#SportHub"
                       className="Demo__some-network__share-button flex items-center"
                     >
-                      <FaFacebookF className="h-3 w-3" />
+                      <FaRegShareFromSquare className="h-5 w-5" />
                     </FacebookShareButton>
                   </div>
                   <p className="text-gray-700 dark:text-gray-400">
