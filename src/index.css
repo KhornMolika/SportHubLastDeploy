@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", "Koh Santepheap", sans-serif;
+}
+
+@keyframes cursor {
+  0%,
+  50%,
+  100% {
+    border: transparent;
+  }
+  25%,
+  75% {
+    border-right: 5px solid;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  25%,
+  35% {
+    width: 60%;
+  }
+  50% {
+    width: 0;
+  }
+  75%,
+  90% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.text-typing {
+  animation: typing 5s steps(18) infinite, cursor 2s steps(5) infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.p-6 {
+  padding: 0 !important;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: calc(1% + 1px) !important;
+}
+.react-multiple-carousel__arrow--left {
+  left: calc(1% + 1px) !important;
+}
+
+.relative-label {
+  position: relative;
+  margin-top: 1.5rem; /* Adjust this based on your needs */
+}
+
+.relative-label input {
+  padding-top: 0.5rem; /* Adjust this based on your needs */
+}
+
+.relative-label label {
+  position: absolute;
+  top: 1rem;
+  background-color: white;
+  left: 0.4rem;
+  padding: 0 0.15rem;
+  border-radius: 5px;
+  color: #666; /* Adjust the color as needed */
+  transition: all 0.2s ease-out;
+  pointer-events: none;
+  transform-origin: top left;
+}
+
+.relative-label input:focus + label,
+.relative-label input:not(:placeholder-shown) + label {
+  top: -0.6rem; /* Adjust this based on your needs */
+  left: 0.5rem; /* Adjust this based on your needs */
+  font-size: 0.75rem; /* Adjust the size based on your needs */
+  color: #222162; /* Adjust the color as needed */
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
