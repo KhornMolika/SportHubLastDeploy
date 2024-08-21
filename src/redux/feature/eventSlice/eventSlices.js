@@ -24,6 +24,7 @@ export const fetcheventsssById = createAsyncThunk(
   "events/fetcheventById",
   async (id) => {
     const response = await fetch(`${apiID}${id}/`);
+    console.log("DataSlug:",response)
     const data = await response.json();
     return data;
   }

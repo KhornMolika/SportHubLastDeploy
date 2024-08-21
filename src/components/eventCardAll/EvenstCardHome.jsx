@@ -13,6 +13,7 @@ export default function EvenstCardHome({
   date,
   id,
   description,
+  slug
 }) {
   const endPoint = import.meta.env.VITE_BASE_IMAGE_URL;
   const formattedDate = moment(date).format("YYYY-MM-DD");
