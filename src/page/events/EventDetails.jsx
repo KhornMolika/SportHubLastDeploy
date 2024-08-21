@@ -6,6 +6,8 @@ import EventDetailCard from "../../components/eventCardAll/EventDetailCard";
 import SpringFramework from "../../assets/advertise/Spring​7-Sep-2024.png";
 import WebDesign from "../../assets/advertise/Web​V3.png";
 import Java from "../../assets/advertise/Java-AUG-2024.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function EventDetails() {
   const param = useParams();
@@ -15,6 +17,12 @@ export default function EventDetails() {
   useEffect(() => {
     dispachaaa(fetcheventsssById(param.id));
   }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  });
 
   return (
     <>
@@ -34,7 +42,7 @@ export default function EventDetails() {
           <section className="lg:w-1/3 w-full h-auto relative lg:mt-0 mb-4 mt-4">
             <section className="lg:absolute top-[160px] flex flex-row lg:flex-col gap-5">
               <div
-                // data-aos="fade-down"
+                data-aos="fade-down"
                 className="w-full lg:w-[75%] mx-auto h-auto cursor-pointer rounded-lg overflow-hidden"
               >
                 <a
@@ -50,7 +58,7 @@ export default function EventDetails() {
                 </a>
               </div>
               <div
-                // data-aos="fade-down"
+                data-aos="fade-down"
                 className="w-full lg:w-[75%] mx-auto h-auto cursor-pointer rounded-lg overflow-hidden"
               >
                 <a
@@ -66,7 +74,7 @@ export default function EventDetails() {
                 </a>
               </div>
               <div
-                // data-aos="fade-down"
+                data-aos="fade-down"
                 className="w-full lg:w-[75%] mx-auto h-auto cursor-pointer rounded-lg overflow-hidden"
               >
                 <a
