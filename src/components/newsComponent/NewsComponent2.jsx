@@ -49,7 +49,7 @@ export default function NewsComponent2({
         />
       </div>
       <div className="px-5 py-4 flex flex-col justify-between h-[176px]">
-        <div className="flex-grow">
+        <div>
           <h3 className="text-lg font-bold line-clamp-2 mb-3 group-hover:text-[#222162]">
             {title || "No Title"}
           </h3>
