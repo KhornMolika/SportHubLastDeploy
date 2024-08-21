@@ -49,14 +49,14 @@ export default function NewsComponent2({
         />
       </div>
       <div className="px-5 py-4 flex flex-col">
-        <h3 className="text-xl font-bold line-clamp-2 mb-3 group-hover:text-[#222162]">
+        <h3 className="text-lg font-bold line-clamp-2 mb-3 group-hover:text-[#222162]">
           {title || "No Title"}
         </h3>
         <div className="flex justify-between items-center text-gray-500">
-          <p className="flex items-center">
+          <p className="flex items-center text-sm">
             <FaCalendarAlt className="mr-2 w-[12px]" /> {formattedDate}
           </p>
-          <p>{formattedViews} views</p>
+          <p className="text-sm">{formattedViews} views</p>
         </div>
         <div className="flex items-center mt-3">
           <img

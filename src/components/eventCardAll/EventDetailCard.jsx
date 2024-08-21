@@ -49,7 +49,7 @@ export default function EventDetailCard({
           dangerouslySetInnerHTML={{ __html: description || "មិនមានអត្ថបទ" }}
         ></p>
 
-        <p className="text-md text-blue-700 hover:text-blue-800 font-normal pt-5 mb-16">
+        <p className="text-md text-blue-700 hover:text-blue-800 font-normal pt-5">
           ប្រភព​ ៖​ Sabay News
         </p>
       </div>
