@@ -12,7 +12,7 @@ export default function EvenstCardHome({
   about,
   date,
   id,
-  metaDescription,
+  description,
 }) {
   const endPoint = import.meta.env.VITE_BASE_IMAGE_URL;
   const formattedDate = moment(date).format("YYYY-MM-DD");
@@ -22,7 +22,7 @@ export default function EvenstCardHome({
     <>
       <HeadTags
         title={title}
-        metaDescription={metaDescription}
+        metaDescription={description}
         ogImage={`${endPoint}${img}`}
       />
       <Link to={`/eventDetail/${id}`}>
