@@ -48,28 +48,32 @@ export default function NewsComponent2({
           className="w-full h-full object-cover rounded-t-xl transform transition-transform duration-300 group-hover:scale-110"
         />
       </div>
-      <div className="px-5 py-4 flex flex-col">
-        <h3 className="text-lg font-bold line-clamp-2 mb-3 group-hover:text-[#222162]">
-          {title || "No Title"}
-        </h3>
-        <div className="flex justify-between items-center text-gray-500">
-          <p className="flex items-center text-sm">
-            <FaCalendarAlt className="mr-2 w-[12px]" /> {formattedDate}
-          </p>
-          <p className="text-sm">{formattedViews} views</p>
+      <div className="px-5 py-4 flex flex-col justify-between h-[176px]">
+        <div className="flex-grow">
+          <h3 className="text-lg font-bold line-clamp-2 mb-3 group-hover:text-[#222162]">
+            {title || "No Title"}
+          </h3>
         </div>
-        <div className="flex items-center mt-3">
-          <img
-            src={
-              profileImage ||
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLMI5YxZE03Vnj-s-sth2_JxlPd30Zy7yEGg&s"
-            }
-            alt="publisher image"
-            className="w-[40px] h-[40px] object-cover rounded-full"
-          />
-          <p className="ml-4 text-md text-gray-800 font-semibold group-hover:text-[#222162]">
-            {username || "Unknown User"}
-          </p>
+        <div className="flex flex-col gap-3 justify-center">
+          <div className="mt-2 flex justify-between text-sm text-gray-500">
+            <p className="flex items-center">
+              <FaCalendarAlt className="mr-2 w-[12px]" /> {formattedDate}
+            </p>
+            <p>{formattedViews} views</p>
+          </div>
+          <div className="flex items-center">
+            <img
+              src={
+                profileImage ||
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLMI5YxZE03Vnj-s-sth2_JxlPd30Zy7yEGg&s"
+              }
+              alt="publisher image"
+              className="w-[40px] h-[40px] object-cover rounded-full"
+            />
+            <p className="ml-4 text-md text-gray-800 font-semibold group-hover:text-[#222162]">
+              {username || "Unknown User"}
+            </p>
+          </div>
         </div>
       </div>
     </div>
