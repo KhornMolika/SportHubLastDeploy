@@ -42,7 +42,7 @@ export default function EventHome() {
           />
 
           <meta name="author" content="SportHub Team" />
-          <meta property="og:title" content="SportHub" />
+          <meta property="og:title" content="SportHubEvent" />
           <meta
             property="og:description"
             content="Find and join sports clubs and activities near you with SportHub."
