@@ -15,7 +15,6 @@ const HeadTags = ({
       <meta property="og:title" key="og:title" content={title} />
       <meta property="og:locale" key="og:locale" content="en_US" />
       <meta charSet="utf-8" />
-      <meta name="thumbnail" content={ogImage} />
       <meta property="og:type" key="og:type" content="website" />
       <meta
         property="og:description"
